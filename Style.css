@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url(./Premier-Asset/img\ \(10\).jpg) no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* Horizontal Scroll */
+.profiles {
+    overflow-x: auto;
+    display: flex;
+    padding: 10px;
+}
+
+.profile-list img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.content-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Updates */
+.updates {
+    padding: 20px;
+    background: #fff;
+}
+
+.updates ul {
+    list-style: none;
+}
+
+/* Movie Shot */
+.movie-shot {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie-content img {
+    width: 50%;
+    margin: 10px;
+}
+
+/* Blog */
+.blog {
+    padding: 20px;
+    background: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #000;
+    color: white;
+}
