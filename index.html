@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premier Models</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="index.js" defer></script>
+
 </head>
 <body>
 
@@ -18,8 +20,12 @@
                     <li>Women / Men</li>
                     <li>Agency / Blog</li>
                     <li>Search</li>
+                    
                 </ul>
             </nav>
+            <!-- Dark Mode Toggle Button -->
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
         </div>
     </header>
 
@@ -32,22 +38,45 @@
 
     <!-- Horizontal Scroll Section -->
     <section class="profiles">
-        <div class="profile-list">
-            <img src="./Premier-Asset/img (1).jpg" alt="Profile">
-            <img src="./Premier-Asset/img (2).jpg" alt="Profile">
-            <img src="./Premier-Asset/img (3).jpg" alt="Profile">
-            <img src="./Premier-Asset/img (4).jpg" alt="Profile">
-            <!-- Add more images -->
+        <div class="profiles">
+            <button class="arrow left" onclick="moveLeft()">&#8249;</button>
+            <div class="profile-list">
+                <img src="./Premier-Asset/img (1).jpg" alt="Profile 1">
+                <img src="./Premier-Asset/img (2).jpg" alt="Profile 2">
+                <img src="./Premier-Asset/img (3).jpg" alt="Profile 3">
+                <img src="./Premier-Asset/img (4).jpg" alt="Profile 4">
+                <img src="./Premier-Asset/img (5).jpg" alt="Profile 5">
+                <img src="./Premier-Asset/img (6).jpg" alt="Profile 6">
+                <img src="./Premier-Asset/img (14).jpg" alt="Profile 7">
+                <img src="./Premier-Asset/img (8).jpg" alt="Profile 8">
+                <img src="./Premier-Asset/img (9).jpg" alt="Profile 9">
+                <img src="./Premier-Asset/img (11).jpg" alt="Profile 10">
+                <img src="./Premier-Asset/img (12).jpg" alt="Profile 11">
+                <img src="./Premier-Asset/img (13).jpg" alt="Profile 12">
+                <img src="./Premier-Asset/img (1).jpg" alt="Profile 1">
+                <img src="./Premier-Asset/img (2).jpg" alt="Profile 2">
+                <img src="./Premier-Asset/img (3).jpg" alt="Profile 3">
+                <img src="./Premier-Asset/img (4).jpg" alt="Profile 4">
+                <img src="./Premier-Asset/img (5).jpg" alt="Profile 5">
+                <img src="./Premier-Asset/img (6).jpg" alt="Profile 6">
+                <img src="./Premier-Asset/img (14).jpg" alt="Profile 7">
+                <img src="./Premier-Asset/img (8).jpg" alt="Profile 8">
+                <img src="./Premier-Asset/img (9).jpg" alt="Profile 9">
+                <img src="./Premier-Asset/img (11).jpg" alt="Profile 10">
+                <img src="./Premier-Asset/img (12).jpg" alt="Profile 11">
+                <img src="./Premier-Asset/img (13).jpg" alt="Profile 12">
+            </div>
+            <button class="arrow right" onclick="moveRight()">&#8250;</button>
         </div>
     </section>
 
     <!-- Content Grid -->
     <section class="content-grid">
-        <div class="content-box">
+        <div class="content-box1">
             <img src="./Premier-Asset/img (5).jpg" alt="Fashion">
-            <p>Fashion Story</p>
+            <p>VOGUE/SHOT</p>
         </div>
-        <div class="content-box">
+        <div class="content-box2">
             <img src="./Premier-Asset/img (6).jpg" alt="Editorial">
             <p>Editorial</p>
         </div>
