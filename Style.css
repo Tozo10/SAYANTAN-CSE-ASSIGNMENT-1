@@ -12,30 +12,84 @@ body {
 /* Navbar */
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     background: #fff;
+    border-bottom: 2px solid black; /* Added black border */
+    position: fixed; /* Fix the header at the top */
+    top: 20px; /* Adjusted to 20px from the top */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other elements */
+    border-top: #000 solid 2px; /* Top border for the header */
+    border-bottom: 2px solid black; /* Bottom border for the header */
+    height: 80px; /* Increase the height of the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    padding: 10px 20px;
+    
+}
+header .logo {
+    flex: 0; /* Keep the logo on the left */
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 0; /* Remove left margin */
 }
 
+nav {
+    flex: 1; /* Center the nav */
+    display: flex;
+    justify-content: center;
+    
+}
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     margin: 0 15px;
     cursor: pointer;
+    position: relative; /* Ensure proper alignment for the border */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
 }
-
+nav ul li:not(:last-child) {
+    border-right: 2px solid black; /* Add a right border to all items except the last one */
+    padding-right: 15px; /* Add space between the text and the border */
+}
+nav ul li:hover {
+    color: black; /* Change text color on hover */
+    background-color: pink; /* Add a background color on hover */
+    padding: 5px 15px; /* Add some padding for better visual effect */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+body {
+    padding-top: 180px; /* Add space below the navbar to prevent overlap with content */
+}
 /* Hero Section */
 .hero {
     background: url(./Premier-Asset/img\ \(10\).jpg) no-repeat center center/cover;
-    height: 400px;
+    height: 700px; /* Adjusted height for the hero section */
+    height top: 50px; /* Adjusted to 50px from the top */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: bisque;
     font-size: 24px;
+    background-size: cover;
+    background-position: center;
+   
 }
 
 /* Horizontal Scroll */
