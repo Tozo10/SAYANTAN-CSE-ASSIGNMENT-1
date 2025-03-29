@@ -37,13 +37,16 @@ nav ul li.dark-mode {
 }
 
 button#dark-mode-toggle {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: black;
+    color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 12px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px; /* Optional: Rounded corners */
     transition: background-color 0.3s ease, color 0.3s ease;
+    position: absolute; /* Position the button absolutely */
+    top: 20px; /* Adjust the vertical position */
+    right: 20px; /* Move the button to the right of the screen */
 }
 
 button#dark-mode-toggle:hover {
@@ -57,9 +60,9 @@ body {
 /* Navbar */
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 0 20px;
     background: #fff;
     border-bottom: 2px solid black; /* Added black border */
     position: fixed; /* Fix the header at the top */
@@ -72,8 +75,28 @@ header {
     height: 80px; /* Increase the height of the navbar */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
 }
+.logo {
+    font-size: 24px; /* Adjust the size of "Premier" */
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    display: inline-block; /* Ensure the logo text and copyright symbol are inline */
+}
+.logo .copyright {
+    font-size: 12px; /* Smaller font size for the copyright symbol */
+    vertical-align: baseline; /* Align it to the top of the text */
+    margin-left: 5px; /* Add some space to the left of the symbol */
+    color: #555; /* Optional: Lighter color for the copyright symbol */
+}
+
+.logo .subtitle {
+    font-size: 12px; /* Smaller font size for "Model Management" */
+    font-weight: normal;
+    color: #555; /* Optional: Lighter color for the subtitle */
+    margin-top: 2px;
+}
 .nav-container {
-    display: flex;
+    display: flexbox;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -93,6 +116,7 @@ nav {
     flex: 1; /* Center the nav */
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 nav ul {
@@ -228,7 +252,7 @@ body {
 }*/
 .content-box1 img {
     width: 100%; /* Make the image span the full width of the container */
-    height: 80%; /* Make the image span the full height of the container */
+    height: 80vh; /* Make the image span the full height of the container */
     object-fit: cover; /* Ensure the image covers the container without leaving space */
     border-radius: 10px; /* Optional: Add rounded corners to the image */
     display: block; /* Remove any inline spacing below the image */
@@ -237,39 +261,111 @@ body {
     font-size: 20px; /* Adjust font size as needed */
     font-weight: 1000; /* Make the text bold */
 }
+
 .content-box2 img {
-    width: 40%;
-    height: auto;
-    border-radius: 10px; /* Optional: Add rounded corners to images */
+    width: 80%; /* Make the image span the full width of the container */
+    height: 50vh; /* Make the image span the full height of the container */
+    object-fit: cover; /* Ensure the image covers the container without leaving space */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    display: block; /* Remove any inline spacing below the image */
+    font-family: 'San-serif'; /* Use a different font for the text */
+    color: #000; /* Change text color to black */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: 1000; /* Make the text bold */
 }
 .content-box1 {
     background: #fff;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto; /* Center the content box */
+    height: 80%; /* Adjust height to auto for better responsiveness */
+
 }
 .content-box2 {
     background: #fff;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto; /* Center the content box */
+    height: 80%; /* Adjust height to auto for better responsiveness */
+
+}
+.vogue-shot {
+    font-weight: 900; /* Makes the text very bold */
+    font-size: 24px; /* Optional: Adjust the font size */
+    color: #000; /* Optional: Set the text color */
+    text-transform: uppercase; /* Optional: Make the text uppercase */
+}
+.feature-exposure-container {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Add space between the two sections */
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Optional: Add spacing between the sections */
+    padding: 20px; /* Optional: Add padding around the container */
+}
+
+.Feature, .Exposure {
+    flex: 1; /* Make both sections take equal width */
+    text-align: justify; /* Center the text inside each section */
+    padding: 10px; /* Add padding inside each section */
+    background: #f8f8f8; /* Optional: Add a background color */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+.Feature {
+    font-weight: 900; /* Makes the text very bold */
+    font-size: 22px; /* Optional: Adjust the font size */
+    color: #000; /* Optional: Set the text color */
+    text-transform: uppercase; /* Optional: Make the text uppercase */
+}
+.Exposure
+{
+    font-weight: lighter; /* Makes the text very bold */
+    font-size: 11px; /* Optional: Adjust the font size */
+    color: #000; /* Optional: Set the text color */
+    
 }
 
 /* Updates */
 .updates {
-    padding: 20px;
-    background: #fff;
+    text-align: center; /* Center-align the text */
+    margin: 50px auto; /* Add space above and below the section */
+    padding: 20px; /* Add padding inside the section */
+    width: 80%; /* Make the section take 80% of the page width */
+    border-top: 2px solid black; /* Add a top border */
+    border-bottom: 2px solid black; /* Add a bottom border */
+    font-size: 24px; /* Increase the font size */
+    background-color: #f8f8f8; /* Optional: Add a light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.updates h2 {
+    font-size: 32px; /* Make the heading larger */
+    font-weight: bold; /* Make the heading bold */
+    margin-bottom: 20px; /* Add space below the heading */
 }
 
 .updates ul {
-    list-style: none;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
+.updates ul li {
+    margin: 10px 0; /* Add space between list items */
+    font-size: 20px; /* Adjust the font size of list items */
+    font-weight: 500; /* Make the list items slightly bold */
+}
 /* Movie Shot */
-.movie-shot {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.movie-shot video {
+    width: 100%; /* Make the video span the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
 
 .movie-content img {
@@ -277,11 +373,7 @@ body {
     margin: 10px;
 }
 
-/* Blog */
-.blog {
-    padding: 20px;
-    background: #fff;
-}
+
 
 /* Footer */
 footer {
